@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route('/', methods=['GET'])
 def fetch_value():
     # In this example, we'll return a simple JSON response with a value
-    return render_template("app.html")
+    return render_template("index.html")
 
 if __name__ == '__main__':
     app.run(debug=True)
