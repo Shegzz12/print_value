@@ -1,4 +1,5 @@
 function updateValue() {
+    console.log("button was clicked!")
     // Get a value from app.js (replace this with your estimated price)
     let valueFromAppJS = 43;
 
