@@ -3,7 +3,7 @@ function updateValue() {
     let valueFromAppJS = 43;
 
     // Make a GET request to the server's endpoint
-    fetch("https://jkl-si93.onrender.com/fetch_value")
+    fetch("http://0.0.0.0:10000/fetch_value")
         .then(response => response.json())
         .then(data => {
             // Get the value from the server's response
