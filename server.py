@@ -1,4 +1,4 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, render_template
 # from flask_cors import CORS
 
 app = Flask(__name__)
@@ -7,8 +7,7 @@ app = Flask(__name__)
 @app.route('/', methods=['GET'])
 def fetch_value():
     # In this example, we'll return a simple JSON response with a value
-    response = jsonify({'value': 42})  # You can replace 42 with the actual value
-    return response
+    return render_template("app.html")
 
 if __name__ == '__main__':
     app.run(debug=True)
