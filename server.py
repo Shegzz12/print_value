@@ -1,8 +1,8 @@
 from flask import Flask, jsonify
-from flask_cors import CORS
+# from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app)
+# CORS(app)
 # Define an endpoint to fetch the value
 @app.route('/fetch_value', methods=['GET'])
 def fetch_value():
@@ -11,4 +11,4 @@ def fetch_value():
     return response
 
 if __name__ == '__main__':
-    app.run(host='127.0.0.1', port=5000)
+    app.run(debug=True ,port=8080,use_reloader=False)
