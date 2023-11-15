@@ -1,7 +1,7 @@
 from flask import Flask, jsonify, render_template
 # from flask_cors import CORS
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder = 'template')
 # CORS(app)
 # Define an endpoint to fetch the value
 @app.route('/', methods=['GET'])
