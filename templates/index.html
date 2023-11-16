@@ -4,18 +4,18 @@
     <title>Simple Example</title>
     <script>
         function updateValue() {
-    console.log("button was clicked!");
+        console.log("button was clicked!");
 
     // Get a value from app.js (replace this with your estimated price)
-    let valueFromAppJS = 43;
-    console.log(valueFromAppJS);
+        let valueFromAppJS = 43;
+        console.log(valueFromAppJS);
 
     // Make a GET request to the server's endpoint
     fetch("https://jkl-si93.onrender.com/fetch_value")
         .then(response => response.json())
         .then(data => {
             // Get the value from the server's response
-            let valueFromServer = data.value;
+            let valueFromServer = JSON.stringify(data.value);
 
             // Choose whether to display the value from the server or app.js
             let finalValue = valueFromServer; // Change this assignment based on your preference
