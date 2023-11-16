@@ -15,7 +15,7 @@
         .then(response => response.json())
         .then(data => {
             // Get the value from the server's response
-            let valueFromServer = JSON.stringify(data.key1);
+            let valueFromServer = JSON.stringify(data.value.key1);
 
             // Choose whether to display the value from the server or app.js
             let finalValue = valueFromServer; // Change this assignment based on your preference
