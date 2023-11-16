@@ -3,6 +3,7 @@ function updateValue() {
 
     // Get a value from app.js (replace this with your estimated price)
     let valueFromAppJS = 43;
+    console.log(valueFromAppJS);
 
     // Make a GET request to the server's endpoint
     fetch("https://jkl-si93.onrender.com/fetch_value")
