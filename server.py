@@ -10,13 +10,13 @@ file_handler.setLevel(WARNING)
 @app.route('/', methods=['GET'])
 def fetch_value():
     # In this example, we'll return a simple JSON response with a value
-    return render_template("43")
+    return render_template("index.html")
 
-# @app.route('/fetch_value', methods=['GET'])
-# def fetch_value():
-#     response
-#     # In this example, we'll return a simple JSON response with a value
-#     return response
+@app.route('/fetch_value', methods=['GET'])
+def fetch_value():
+    response = 43
+    # In this example, we'll return a simple JSON response with a value
+    return response
 
 if __name__ == '__main__':
     app.run(port=10000, debug=True)
